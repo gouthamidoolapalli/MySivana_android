@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mysivana.custom.MSTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:fontName="Medium"
+    android:textSize="@dimen/textsize_16"
+    android:id="@+id/text_title"
+    android:padding="@dimen/dimen_15"
+    android:textColor="@color/colorMineShaft">
+
+</com.mysivana.custom.MSTextView>

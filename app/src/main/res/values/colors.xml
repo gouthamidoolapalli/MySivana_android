@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#46B860</color>
+    <color name="colorPrimaryDark">#46B860</color>
+    <color name="colorAccent">#46b860</color>
+    <color name="colorMineShaft">#313131</color>
+    <color name="colorDoveGray">#616161</color>
+    <color name="colorMineShaft1">#2A2828</color>
+    <color name="colorDivider">#e1e1e1</color>
+    <color name="colorFloating">#E8E8E8</color>
+    <color name="colorHint">#808080</color>
+    <color name="colorSignUpTransparant">#f4f9ee</color>
+    <color name="colorText">#616161</color>
+    <color name="pf_grey">#262626</color>
+    <color name="pf_grey_light">#999999</color>
+    <color name="pf_white">#ffffff</color>
+    <color name="helvetics_std_light">#313131</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="error">#ba0404</color>
+    <color name="pale_green">#EDF8F0</color>
+    <color name="leader_item_gray">#eceaeb</color>
+</resources>

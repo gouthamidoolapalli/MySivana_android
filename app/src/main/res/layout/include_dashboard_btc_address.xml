@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btc_address_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_20"
+    android:background="@android:color/white"
+    android:visibility="gone"
+    app:cardCornerRadius="@dimen/dimen_4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mysivana.custom.MSTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_10"
+            android:text="?attr/coinAddress"
+            tools:text="@string/bitcoin_address"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textsize_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_btc_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_15"
+                android:paddingStart="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_5"
+                android:text=""
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:id="@+id/iv_copy_clip_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_15"
+                android:onClick="onClickCopy"
+                android:src="@drawable/ic_copy" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/Divider"
+                android:layout_weight="1" />
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/primary_border"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/or_string"
+                android:textSize="@dimen/textsize_12" />
+
+            <View
+                style="@style/Divider"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/dimen_15"
+            android:paddingStart="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="?attr/coinQrcode"
+                    android:maxLines="1"
+                    tools:text="@string/bitcoin_qr_code"
+                    android:textColor="@color/colorText" />
+
+                <ImageView
+                    android:id="@+id/iv_btc_qr"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:src="@drawable/qr_temp_image" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.mysivana.custom.MSTextView
+                    android:id="@+id/tv_payment_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:text="@string/awaiting_payment"
+                    android:textColor="@color/colorText" />
+
+
+                <com.mysivana.custom.ProgressWheel
+                    android:id="@+id/pw_timer"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:tag="Thin"
+                    app:barColor="@color/colorPrimary"
+                    app:barWidth="@dimen/dimen_3"
+                    app:rimColor="@color/colorDivider"
+                    app:rimWidth="@dimen/dimen_3"
+                    app:textColor="@color/colorPrimary"
+                    app:textSize="@dimen/textsize_14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/buy_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="@dimen/dimen_15"
+            android:text="@string/btc_buy"
+            android:textColor="@color/colorText" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

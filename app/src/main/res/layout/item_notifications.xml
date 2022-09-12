@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/dimen_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15">
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_hand"
+                android:layout_alignParentTop="true"/>
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/notification_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/notification_icon"
+                android:layout_toLeftOf="@+id/requested_attachment"
+                android:textColor="@color/colorMineShaft1"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Light" />
+
+            <ImageView
+                android:id="@+id/requested_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_attach_file"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

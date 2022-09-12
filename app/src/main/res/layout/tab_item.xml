@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mysivana.custom.MSTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_item"
+    android:textColor="@color/white"
+    app:fontName="Medium"
+    android:gravity="center">
+
+</com.mysivana.custom.MSTextView>

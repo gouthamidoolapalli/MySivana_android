@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TransactionReceiptActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_popup_bg1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_collapseMode="pin">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_size"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_16"
+                android:text="@string/transaction_receipt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_22"
+                app:fontName="Light" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ivParallax"
+            layout="@layout/transaction_receipt_header" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_size">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/transaction_receipt_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_15"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/dimen_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/service_provider_name"
+                        style="@style/MainTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:text=""
+                        android:textColorLink="@color/colorText"
+                        android:textSize="@dimen/textsize_14"
+                        app:fontName="Roman" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/service_provider_address"
+                            style="@style/MainTextStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_8"
+                            android:layout_weight="0.4"
+                            android:gravity="left"
+                            android:maxLines="6"
+                            android:text="djffj\nfgfjgjg\nsdfyjkj\nffcgvv"
+                            android:textSize="@dimen/textsize_12"
+                            app:fontName="Roman" />
+
+                        <LinearLayout
+                            android:id="@+id/service_provider_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_weight="0.6"
+                            android:orientation="vertical">
+
+                            <com.mysivana.custom.MSTextView
+                                android:id="@+id/service_provider_details"
+                                style="@style/MainTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="hdhfshflhkdshk\nfdsghdgf\nfdsgfhjdsg"
+                                android:textSize="@dimen/textsize_12"
+                                app:fontName="Roman" />
+
+
+                            <com.mysivana.custom.MSTextView
+                                android:id="@+id/transaction_status"
+                                style="@style/SubTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="@dimen/dimen_5"
+                                android:gravity="right"
+                                android:text="@string/transaction_status"
+                                android:textSize="@dimen/textsize_14"
+                                app:fontName="Roman" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:background="@color/colorPrimary" />
+
+                    <include layout="@layout/btc_calculator_layout" />
+
+
+                    <com.mysivana.custom.MSButton
+                        android:id="@+id/btn_send_receipt"
+                        style="@style/Match.Wrap"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:background="@drawable/button_bg"
+                        android:padding="@dimen/dimen_10"
+                        android:text="@string/send_receipt"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_20"
+                        app:fontName="Medium" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+</android.support.design.widget.CoordinatorLayout>

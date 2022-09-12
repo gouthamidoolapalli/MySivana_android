@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_40">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5">
+
+            <com.mysivana.custom.MSTextView
+                style="@style/SubTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="0dp"
+                android:text="@string/receipt_for"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Medium" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/recepient_name_tv"
+                style="@style/SubTextStyle"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18"
+                app:fontName="Light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5">
+
+            <com.mysivana.custom.MSTextView
+                style="@style/SubTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="0dp"
+                android:text="@string/transaction_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Medium" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/transaction_code_tv"
+                style="@style/SubTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18"
+                app:fontName="Light" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/phone_tv"
+        style="@style/SubTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:drawableLeft="@drawable/ic_phone_call_white"
+        android:drawablePadding="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12"
+        app:fontName="Medium" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/email_tv"
+        style="@style/SubTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:drawableLeft="@drawable/ic_email_white"
+        android:drawablePadding="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12"
+        app:fontName="Medium" />
+
+</LinearLayout>

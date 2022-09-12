@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".ui.InviteFriendActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/app_popup_bg"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/screen_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dimen_16"
+                android:text="@string/referral_leader_board"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_20"
+                app:fontName="Light" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_gold_coin" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:src="@drawable/ic_gold_coin" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dimen_40"
+                            android:src="@drawable/ic_gold_coin" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_gold_coin" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:src="@drawable/ic_gold_coin" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/ic_gold_coin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="0.9">
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/first_prize"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/second_prize"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/third_prize"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_2"
+                android:weightSum="0.9">
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/thirty_gold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14" />
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/twenty_gold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14" />
+
+                <com.mysivana.custom.MSTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/ten_gold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14" />
+            </LinearLayout>
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/txt_contest_rules"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="@string/know_contest_rules"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Roman" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMineShaft"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimen_7"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_7">
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/no_of_users"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Roman" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/participants_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Bold" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_2"
+            android:paddingBottom="@dimen/dimen_2"
+            android:paddingRight="@dimen/dimen_12"
+            android:paddingLeft="@dimen/dimen_12"
+            android:background="@color/leader_item_gray">
+
+
+                <com.mysivana.custom.MSTextView
+                    android:id="@+id/winner_rank_tv"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/winner_name"
+                    android:gravity="center|left"
+                    android:text="Rank"
+                    android:textColor="@color/colorMineShaft"
+                    android:textSize="@dimen/textsize_10"
+                    app:fontName="Medium" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/winner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/winner_img_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/winner_img_name"
+                android:layout_toLeftOf="@+id/winner_img_name"
+                android:layout_toRightOf="@+id/winner_rank_tv"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_20"
+                android:text="Name"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_10"
+                app:fontName="Medium" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/winner_img_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/winner_points_name"
+                android:layout_alignTop="@+id/winner_points_name"
+                android:layout_toLeftOf="@+id/winner_points_name"
+                android:gravity="center|right"
+                android:text="Image"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_10"
+                app:fontName="Medium" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/winner_points_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center|right"
+                android:text="SIVA Tokens"
+                android:padding="@dimen/dimen_2"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_10"
+                app:fontName="Medium" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/winner_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/my_position_view"
+                android:clipToPadding="false" />
+
+            <RelativeLayout
+                android:id="@+id/my_position_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/leader_item_gray"
+                android:visibility="gone">
+
+                <include layout="@layout/item_leader_board" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.mysivana.custom.MSButton
+            android:id="@+id/btn_refer_friends"
+            style="@style/Match.Wrap"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_selector"
+            android:onClick="OnClickShareInvite"
+            android:padding="@dimen/dimen_12"
+            android:text="@string/refer_friends_to_win"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_20"
+            app:fontName="Medium" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

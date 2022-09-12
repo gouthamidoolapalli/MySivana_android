@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_25">
+
+    <android.support.v7.widget.AppCompatImageView
+        style="@style/Logo"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/app_logo" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="@color/error"
+        android:padding="@dimen/dimen_12"
+        android:visibility="invisible"
+        app:fontName="Light"
+        android:textSize="@dimen/textsize_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_white"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Match.Wrap"
+            android:padding="@dimen/dimen_5">
+
+            <com.mysivana.custom.MSEditText
+                android:id="@+id/et_email_phone"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_email_phone_number"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_16" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/Divider" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Match.Wrap"
+            android:id="@+id/password_TIL"
+            android:padding="@dimen/dimen_5">
+
+            <com.mysivana.custom.MSPasswordEditText
+                android:id="@+id/et_password"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_password"
+                app:useStrikeThrough = "true"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_16" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <com.mysivana.custom.MSTextView
+        style="@style/Match.Wrap"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:gravity="right"
+        android:onClick="onClickForgotPassword"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorMineShaft1"
+        android:textSize="@dimen/textsize_16" />
+
+    <com.mysivana.custom.MSButton
+        style="@style/Match.Wrap"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/button_bg"
+        android:onClick="onClickLogin"
+        android:padding="@dimen/dimen_15"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_20"
+        app:fontName="Medium" />
+
+    <com.mysivana.custom.MSButton
+        style="@style/Match.Wrap"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/rectangle_transparant"
+        android:onClick="onClickSignUp"
+        android:padding="@dimen/dimen_20"
+        android:text="@string/account_sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMineShaft1"
+        android:textSize="@dimen/textsize_16"
+        app:fontName="Light" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="ThemeBitCoin">
+        <item name="coinBackground">@drawable/ic_bitcoin_original</item>
+        <item name="coinBackground1">@drawable/ic_bitcoin_black</item>
+        <item name="coinHint">@string/hint_value_in_btc</item>
+        <item name="coinValue">@string/btc_value</item>
+        <item name="coinTotal">@string/total_btc_paid</item>
+        <item name="coinAddress">@string/bitcoin_address</item>
+        <item name="coinQrcode">@string/bitcoin_qr_code</item>
+        <item name="coinServiceCharge">@string/service_charge_in_btc</item>
+        <item name="buy_currency_link">@string/btc_buy</item>
+    </style>
+
+    <style name="ThemeEthereum">
+        <item name="coinBackground">@drawable/ic_ethereum_original</item>
+        <item name="coinBackground1">@drawable/ic_ethereum</item>
+        <item name="coinHint">@string/hint_value_in_eth</item>
+        <item name="coinValue">@string/eth_value</item>
+        <item name="coinTotal">@string/total_eth_paid</item>
+        <item name="coinAddress">@string/ethereum_address</item>
+        <item name="coinQrcode">@string/ethereum_qr_code</item>
+        <item name="coinServiceCharge">@string/service_charge_in_eth</item>
+        <item name="buy_currency_link">@string/eth_buy</item>
+    </style>
+
+
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Match.Wrap"  parent="Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Wrap.Match"  parent="Match">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Logo">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="Divider_horizontal">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="AppTheme.FloatingDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionModeOverlay">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">.70</item>
+    </style>
+
+    <style name="AppTheme.ProgressDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionModeOverlay">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextLabel" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="colorAccent">@color/colorDivider</item>
+        <item name="colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/colorDivider</item>
+    </style>
+
+    <style name="MainTextStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">@dimen/textsize_20</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="SubTextStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">@dimen/textsize_12</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+
+    <style name="NormalHint" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="ErrorHint" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <style name="LoadingIndicatorView">
+        <item name="minWidth">40dip</item>
+        <item name="maxWidth">40dip</item>
+        <item name="minHeight">40dip</item>
+        <item name="maxHeight">40dip</item>
+        <item name="indicatorName">RotateMultipleIndicator</item>
+    </style>
+</resources>

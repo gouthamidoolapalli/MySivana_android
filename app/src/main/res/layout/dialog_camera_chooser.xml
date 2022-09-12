@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_8">
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_pic_from"
+            android:textAllCaps="true"
+            android:textColor="@color/colorMineShaft"
+            android:textSize="@dimen/dimen_16"
+            app:fontName="Roman" />
+
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:src="@drawable/ic_popup_close_green" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15"
+        android:background="@drawable/rectangle_white"
+        android:orientation="vertical">
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/camera_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_15"
+            android:text="@string/camera"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textsize_14" />
+
+        <View style="@style/Divider" />
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/gallery_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_15"
+            android:text="@string/gallery"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textsize_14" />
+
+        <LinearLayout
+            android:id="@+id/request_money_chooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View style="@style/Divider" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/document_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_15"
+                android:text="@string/document"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16">
+    
+    <com.mysivana.custom.MSTextView
+        style="@style/Match.Wrap"
+        android:id="@+id/textView1"
+        app:fontName="Roman"
+        android:paddingStart="@dimen/dimen_15"
+        android:paddingEnd="@dimen/dimen_15"
+        android:textSize="@dimen/textsize_14"
+        android:textColor="@color/colorMineShaft"/>
+
+    <com.mysivana.custom.MSTextView
+        style="@style/Match.Wrap"
+        android:paddingStart="@dimen/dimen_15"
+        android:paddingEnd="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/textsize_11"
+        android:textColor="@color/colorDoveGray"/>
+
+</LinearLayout>

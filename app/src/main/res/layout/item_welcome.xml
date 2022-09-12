@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_15">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:src="@drawable/sign_in_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/tv_title"
+        style="@style/Wrap"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center"
+        android:paddingStart="@dimen/dimen_15"
+        android:text="Easy Step to Exchange BTC"
+        android:textColor="@color/colorMineShaft"
+        android:textSize="@dimen/textsize_24"
+        app:fontName="Roman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/tv_subtitle"
+        style="@style/Wrap"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center"
+        android:paddingEnd="@dimen/dimen_15"
+        android:paddingStart="@dimen/dimen_15"
+        android:text="Help people tranfer the money to there close one’s across the globe with 4 easy steps with MySivana App"
+        android:textColor="@color/colorMineShaft"
+        android:textSize="@dimen/textsize_14"
+        app:fontName="Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+</android.support.constraint.ConstraintLayout>

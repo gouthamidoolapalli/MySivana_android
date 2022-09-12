@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bank_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    app:cardCornerRadius="@dimen/dimen_4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:drawableLeft="@drawable/black_radius"
+                android:drawablePadding="@dimen/dimen_25"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_15"
+                android:text="@string/add_bank_details"
+                android:textColor="@color/colorMineShaft1"
+                android:textSize="@dimen/textsize_16" />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5">
+
+                <com.mysivana.custom.MSEditText
+                    android:id="@+id/et_payee_name"
+                    style="@style/Match.Wrap"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/payee_name"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textsize_16" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/Divider" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5">
+
+                <com.mysivana.custom.MSEditText
+                    android:id="@+id/et_ifsc_code"
+                    style="@style/Match.Wrap"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/ifsc_code"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="11"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textsize_16" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/Divider" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5">
+
+                <com.mysivana.custom.MSEditText
+                    android:id="@+id/et_bank_name"
+                    style="@style/Match.Wrap"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/bank_name"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textsize_16" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/Divider" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5">
+
+                <com.mysivana.custom.MSEditText
+                    android:id="@+id/et_bank_branch"
+                    style="@style/Match.Wrap"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/bank_branch"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textsize_16" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/Divider" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5">
+
+                <com.mysivana.custom.MSEditText
+                    android:id="@+id/et_acc_num"
+                    style="@style/Match.Wrap"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/acc_number"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textsize_16" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/Divider"
+                android:visibility="gone"/>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:visibility="gone">
+
+                <com.mysivana.custom.MSEditText
+                    android:id="@+id/et_account_type"
+                    style="@style/Match.Wrap"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/account_type"
+                    android:inputType="textAutoComplete|textCapSentences"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textsize_16"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

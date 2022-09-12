@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ReportIssueActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_toolbar_bg1"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.mysivana.custom.MSTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingStart="@dimen/dimen_16"
+            android:text="@string/report_my_issue"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_22"
+            app:fontName="Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/my_transaction_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <com.mysivana.custom.TimeLineView
+                    android:id="@+id/bitcoin_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    app:line="@color/colorPrimary"
+                    app:linePadding="0dp"
+                    app:lineSize="1dp"
+                    app:marker="@drawable/ic_bitcoin"
+                    app:showBottomLine="true"
+                    app:showTopLine="false" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/tv_bitcoin_value"
+                        style="@style/MainTextStyle"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:text="0.899888999" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dimen_15"
+                        android:id="@+id/details_layout">
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/location"
+                            style="@style/SubTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_location"
+
+                            android:text="" />
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/date"
+                            style="@style/SubTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_date"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:text="" />
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/time"
+                            style="@style/SubTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:text=""
+                            app:fontName="Light" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/on_click_expand_btn"
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_gravity="center|right"
+                    android:padding="@dimen/dimen_5"
+                    android:rotation="90"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_point_to_right" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/show_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <com.mysivana.custom.TimeLineView
+                        android:id="@+id/rupee_marker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        app:line="@color/colorPrimary"
+                        app:linePadding="0dp"
+                        app:lineSize="1dp"
+                        app:marker="@drawable/ic_rupee" />
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/rupee_figure"
+                        style="@style/MainTextStyle"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_toRightOf="@+id/rupee_marker"
+                        android:text="0.899888999" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/merchant_layout"
+                    android:orientation="horizontal">
+
+                    <com.mysivana.custom.TimeLineView
+                        android:id="@+id/merchant_marker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        app:line="@color/colorPrimary"
+                        app:linePadding="0dp"
+                        app:lineSize="1dp"
+                        app:marker="@drawable/user_img" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:orientation="vertical">
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/merchant_name"
+                            style="@style/MainTextStyle"
+                            android:text="Rahul kanhil" />
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/merchant"
+                            style="@style/SubTextStyle"
+                            android:text="Merchant"
+                            android:textColor="@color/colorPrimary"
+                            app:fontName="Bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <com.mysivana.custom.TimeLineView
+                        android:id="@+id/receiver_marker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        app:line="@color/colorPrimary"
+                        app:linePadding="0dp"
+                        app:lineSize="1dp"
+                        app:marker="@drawable/user_img" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:orientation="vertical">
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/receiver_name"
+                            style="@style/MainTextStyle"
+                            android:text="Satish N" />
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/receiver"
+                            style="@style/SubTextStyle"
+                            android:text="Receiver"
+                            android:textColor="@color/colorPrimary"
+                            app:fontName="Bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+
+                    <com.mysivana.custom.TimeLineView
+                        android:id="@+id/transaction_marker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        app:line="@color/colorPrimary"
+                        app:linePadding="0dp"
+                        app:lineSize="1dp"
+                        app:marker="@drawable/ic_transaction_code"
+                        app:showBottomLine="false" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:orientation="vertical">
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/transaction_code_figure"
+                            style="@style/MainTextStyle"
+                            android:text="090-786-456" />
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/transaction"
+                            style="@style/SubTextStyle"
+                            android:text="Transaction Code"
+                            android:textColor="@color/colorPrimary"
+                            app:fontName="Bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/error_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:padding="@dimen/dimen_12"
+                        android:textColor="@color/error"
+                        android:textSize="@dimen/textsize_14"
+                        android:visibility="invisible"
+                        app:fontName="Light" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_feedback"
+                        style="@style/Match.Wrap"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="@dimen/dimen_15"
+                        android:background="@drawable/rectangle_white"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/et_feedback"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/report_issue_statement"
+                            android:maxLines="5"
+                            android:padding="@dimen/dimen_5"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/textsize_16" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.mysivana.custom.MSButton
+                        style="@style/Match.Wrap"
+                        android:layout_marginBottom="@dimen/dimen_15"
+                        android:background="@drawable/button_bg"
+                        android:onClick="onClickSend"
+                        android:padding="@dimen/dimen_15"
+                        android:text="@string/send"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_20"
+                        app:fontName="Medium" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

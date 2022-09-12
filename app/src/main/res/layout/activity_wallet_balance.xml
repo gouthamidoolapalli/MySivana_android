@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/app_popup_bg"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_size"
+                android:gravity="center_vertical|left"
+                android:text="@string/mysivana_balance"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_22"
+                app:fontName="Light" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/request_stmt"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/bal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/available_bal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16"
+                app:fontName="Roman" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/wallet_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:drawablePadding="@dimen/dimen_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_28"
+                app:fontName="Bold" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/statement_btn_selector"
+            android:elevation="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_8">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/request_stmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/statement_btn_selector"
+                android:elevation="@dimen/dimen_10"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_12"
+                android:text="@string/request_stmt"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_16" />
+        </android.support.v7.widget.CardView>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/balance_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/no_data_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_15"
+        android:text="@string/no_transactions"
+        android:visibility="gone"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textsize_16"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

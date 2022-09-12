@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LegalActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_toolbar_bg1"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.mysivana.custom.MSTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingStart="@dimen/dimen_16"
+            android:text="@string/legal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_22"
+            app:fontName="Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_copyright"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/copyright"
+                android:onClick="onClickLegal"
+                android:padding="@dimen/dimen_16"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_18" />
+
+
+            <View style="@style/Divider" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_terms"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/terms_conditions"
+                android:onClick="onClickLegal"
+                android:padding="@dimen/dimen_15"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_18" />
+
+            <View style="@style/Divider" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_privacy"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/privacy_policy"
+                android:onClick="onClickLegal"
+                android:padding="@dimen/dimen_15"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_18" />
+
+            <View style="@style/Divider" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_aml_privacy"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/aml_privacy_policy"
+                android:onClick="onClickLegal"
+                android:padding="@dimen/dimen_15"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textsize_18" />
+
+            <View style="@style/Divider" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

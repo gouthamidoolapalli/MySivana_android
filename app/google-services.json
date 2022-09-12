@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "123594297790",
+    "firebase_url": "https://mysivana-99f8a.firebaseio.com",
+    "project_id": "mysivana-99f8a",
+    "storage_bucket": "mysivana-99f8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123594297790:android:da5fa49d2942d56a",
+        "android_client_info": {
+          "package_name": "com.mysivana.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123594297790-ur9v98jage5gjo4ikbjnioqnnoh228he.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mysivana.android",
+            "certificate_hash": "eefbbb32105345bd0209eed39d9f0c79e6573eb8"
+          }
+        },
+        {
+          "client_id": "123594297790-5fvc2doc476babnp7i4hiuc43fq228ue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2zZt382PzjzlgXwFi0fiqbY9XcrrXQF4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123594297790-dfsalfm3r0lid7mgei17tpjgvavtdrbr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mysivana"
+              }
+            },
+            {
+              "client_id": "123594297790-5fvc2doc476babnp7i4hiuc43fq228ue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

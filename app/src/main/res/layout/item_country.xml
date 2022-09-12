@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_large">
+
+    <com.mysivana.custom.CircleImageView
+        android:id="@+id/flag"
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="0.3dp" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:textColor="@color/pf_grey" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/dial_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:textColor="@color/pf_grey_light" />
+
+</LinearLayout>

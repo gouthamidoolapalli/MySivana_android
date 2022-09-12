@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_8">
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorMineShaft"
+            android:textSize="@dimen/dimen_16"
+            app:fontName="Roman" />
+
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:src="@drawable/ic_popup_close_green" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider"></View>
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/warning_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/dialog_window_warning"
+        android:textColor="@color/colorMineShaft"
+        android:textSize="@dimen/textsize_14"
+        app:fontName="Light" />
+
+    <com.mysivana.custom.MSTextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:textColor="@color/error"
+        android:textSize="@dimen/textsize_14"
+        android:visibility="gone"
+        app:fontName="Light" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/Match.Wrap"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="@drawable/rectangle_white"
+        android:padding="@dimen/dimen_5">
+        <com.mysivana.custom.MSPasswordEditText
+            android:id="@+id/et_password"
+            style="@style/Match.Wrap"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/hint_password"
+            app:useStrikeThrough = "true"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:padding="@dimen/dimen_5"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textsize_16" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <com.mysivana.custom.MSButton
+        android:id="@+id/proceed_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_weight="0.4"
+        android:background="@drawable/button_bg"
+        android:onClick="onClickSave"
+        android:text="@string/proceed"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_16"
+        app:fontName="Medium" />
+
+</LinearLayout>

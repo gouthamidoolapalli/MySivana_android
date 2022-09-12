@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".ui.InviteFriendActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_toolbar_bg1"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/screen_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_16"
+                android:text="@string/invite_friend"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_20"
+                app:fontName="Light" />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16"
+                android:text="Invite your friends to \njoin MySivana"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_26"
+                app:fontName="Light" />
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingEnd="@dimen/dimen_16"
+                android:text="Share an invite and give you and your friends a chance to win gold."
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_16"
+                app:fontName="Light" />
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingEnd="@dimen/dimen_16"
+                android:onClick="OnClickContestWork"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/how_the_contest_work"
+                android:textColor="#0000FF"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Medium" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:src="@drawable/img_invite"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mysivana.custom.MSTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingEnd="@dimen/dimen_16"
+                android:text="Share Your Invite Code"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Light" />
+
+            <com.mysivana.custom.MSTextView
+                android:id="@+id/tv_invite_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:onClick="OnClickShareInvite"
+                android:background="@drawable/rectangle_white"
+                android:drawableRight="@drawable/ic_share_green"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="gou123erc4w6"
+                android:textColor="@color/colorMineShaft"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.mysivana.custom.MSButton
+                android:id="@+id/btn_confirm_payment"
+                style="@style/Match.Wrap"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_selector"
+                android:onClick="OnClickShareInvite"
+                android:padding="@dimen/dimen_12"
+                android:text="INVITE FRIENDS"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_20"
+                app:fontName="Medium" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

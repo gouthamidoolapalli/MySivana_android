@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@android:color/white"
+                                                 tools:context=".ui.UserProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_toolbar_bg1"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.mysivana.custom.MSTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingStart="@dimen/dimen_16"
+            android:text="@string/my_profile"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_22"
+            app:fontName="Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_15">
+
+                <com.mysivana.custom.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_80"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user_avatar"/>
+
+                <com.mysivana.custom.MSTextView
+                    android:id="@+id/change_profile_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="@dimen/dimen_3"
+                    android:background="@drawable/ic_camera"
+                    android:onClick="onChangeProfilePicture"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/view_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/Divider"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/Match.Wrap"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/tv_business_name"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="@string/hint_business_name"
+                            android:inputType="none"
+                            android:padding="@dimen/dimen_5"
+                            android:text="Vijaya Super Market"
+                            android:textColor="@color/colorMineShaft"
+                            android:textSize="@dimen/textsize_18"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/Divider"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/Match.Wrap"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/tv_business_address"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="@string/location"
+                            android:inputType="none"
+                            android:padding="@dimen/dimen_5"
+                            android:text="Plot No. 28, Manasa Nest, Radhika To Moula-Ali Road, Moulali Road, I.E. Moula-Ali, MJ Colony, ECIL, Secunderabad, Telangana 500062"
+                            android:textColor="@color/colorMineShaft"
+                            android:textSize="@dimen/textsize_12"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/Match.Wrap"
+                    android:padding="@dimen/dimen_5">
+
+                    <com.mysivana.custom.MSEditText
+                        android:id="@+id/tv_full_name"
+                        style="@style/Match.Wrap"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/hint_full_name"
+                        android:inputType="none"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Naresh Poola"
+                        android:textColor="@color/colorMineShaft"
+                        android:textSize="@dimen/textsize_18"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View style="@style/Divider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/Match.Wrap"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/tv_phone"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="@string/phone_number"
+                            android:inputType="none"
+                            android:padding="@dimen/dimen_5"
+                            android:text="+91 9999999999"
+                            android:textColor="@color/colorMineShaft"
+                            android:textSize="@dimen/textsize_18"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/phone_verify_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:padding="@dimen/dimen_10"
+                        android:text="@string/verified"
+                        android:textColor="@color/colorPrimary"
+                        app:fontName="Light"/>
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/Match.Wrap"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/tv_customer_email"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="@string/hint_email"
+                            android:inputType="none"
+                            android:padding="@dimen/dimen_5"
+                            android:text="pulanaresh@gmail.com"
+                            android:textColor="@color/colorMineShaft"
+                            android:textSize="@dimen/textsize_18"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/email_verify_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:padding="@dimen/dimen_10"
+                        android:text="@string/verified"
+                        android:textColor="@color/colorPrimary"
+                        app:fontName="Light"/>
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+
+                <LinearLayout
+                    android:id="@+id/password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/Match.Wrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/tv_password"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="@string/password"
+                            android:padding="@dimen/dimen_5"
+                            android:text="**********"
+                            android:textColor="@color/colorMineShaft"
+                            android:textSize="@dimen/textsize_18"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.mysivana.custom.MSTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|right"
+                        android:onClick="onEditPasswordClick"
+                        android:text="@string/change"
+                        android:textColor="@color/colorPrimary"
+                        app:fontName="Light"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/view_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/Divider"/>
+
+                    <com.mysivana.custom.MSTextView
+                        android:id="@+id/add_bank_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:onClick="onBankInfoClicked"
+                        android:paddingBottom="@dimen/dimen_15"
+                        android:paddingEnd="@dimen/dimen_10"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_15"
+                        android:text="ADD BANK DEATILS"
+                        android:textColor="@color/colorPrimary"
+                        app:fontName="Medium"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/bank_details_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/Match.Wrap"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/dimen_5">
+
+                            <com.mysivana.custom.MSEditText
+                                android:id="@+id/tv_bank_info"
+                                style="@style/Match.Wrap"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:hint="@string/bank_information"
+                                android:padding="@dimen/dimen_5"
+                                android:text="****************"
+                                android:textColor="@color/colorMineShaft"
+                                android:textSize="@dimen/textsize_18"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.mysivana.custom.MSTextView
+                            android:id="@+id/view_bank_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:drawableRight="@drawable/ic_arrow_right"
+                            android:gravity="center_vertical|right"
+                            android:onClick="onBankInfoClicked"
+                            android:text="@string/view"
+                            android:textColor="@color/colorPrimary"
+                            app:fontName="Light"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+
+                <LinearLayout
+                    android:id="@+id/bank_balance_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/Match.Wrap"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/dimen_5">
+
+                            <com.mysivana.custom.MSEditText
+                                android:id="@+id/tv_bank_balance"
+                                style="@style/Match.Wrap"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:hint="@string/mysivana_balance"
+                                android:padding="@dimen/dimen_5"
+                                android:textColor="@color/colorMineShaft"
+                                android:textSize="@dimen/textsize_18"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.mysivana.custom.MSTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:drawableRight="@drawable/ic_arrow_right"
+                            android:gravity="center_vertical|right"
+                            android:onClick="onShowBalanceDetails"
+                            android:text="@string/view"
+                            android:textColor="@color/colorPrimary"
+                            app:fontName="Light"/>
+                    </LinearLayout>
+
+                    <View style="@style/Divider"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/Match.Wrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5">
+
+                        <com.mysivana.custom.MSEditText
+                            android:id="@+id/tv_siva_tokens"
+                            style="@style/Match.Wrap"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:hint="@string/mysivana_tokens"
+                            android:padding="@dimen/dimen_5"
+                            android:textColor="@color/colorMineShaft"
+                            android:textSize="@dimen/textsize_18"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.mysivana.custom.MSTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|right"
+                        android:onClick="onShowLeaderBoard"
+                        android:text="@string/view"
+                        android:textColor="@color/colorPrimary"
+                        app:fontName="Light"/>
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

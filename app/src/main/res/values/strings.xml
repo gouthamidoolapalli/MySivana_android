@@ -1,0 +1,326 @@
+<resources>
+    <string name="app_name">MySivana</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="server_error">Service Unavailable</string>
+    <string name="internet_connection_unavailable">Check your internet connection and try again.</string>
+    <string name="done">DONE</string>
+    <string name="hint_email_phone_number">Email / Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="confirm_payment">CONFIRM PAYMENT</string>
+    <string name="account_sign_up">Don\'t you have an account? <u>Sign up</u></string>
+    <string name="account_exists">Already have an account? <u>Sign In</u></string>
+    <string name="send">Send</string>
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="title_create_account">Create Account</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_db_full_name">Full Name </string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="merchant">Merchant</string>
+    <string name="sender_receiver">Sender / Receiver</string>
+    <string name="hint_business_name">Business Name</string>
+    <string name="location">Location</string>
+    <string name="my_profile">Profile</string>
+    <string name="your_transactions"> My Transactions</string>
+    <string name="completed_transactions">Completed</string>
+    <string name="pending_transactions">Ongoing</string>
+    <string name="help">Help</string>
+    <string name="legal">Legal</string>
+    <string name="call_us">Call us</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_db_amount">Amount </string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hint_db_phone_number">Phone Number </string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_db_email_address">Email Address </string>
+    <string name="click_continue">Continue</string>
+    <string name="click_to_login">Click here to <b>Sign In.</b></string>
+    <string name="otp_sent">OTP sent\n to your registered mobile number, if not\n<u>Resend OTP</u></string>
+    <string name="otp_sent_email">OTP sent\n to your registered email, if not\n<u>Resend OTP</u></string>
+    <string name="otp_sent_email_success">OTP sent to your registered email.</string>
+    <string name="otp_resent">OTP sent to your registered mobile number</string>
+    <string name="enter_otp">Enter 6 Digit OTP</string>
+    <string name="enter_otp_transaction">Enter 6 digit OTP to confirm your transaction.</string>
+    <string name="default_hint_text">Search Your Business Location</string>
+    <string name="agree_to_terms_conditions">I agree to terms and conditions</string>
+    <string name="help_statement">Please write us your valuable feedback or queries. We\'d be happy to hear from you.</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCW1X2rWiD4x0mCILIop5q0L84aR_XL9uY</string>
+    <string name="copyright">Copyright</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy &amp; Policy</string>
+    <string name="skip">skip</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="com_lamudi_phonefield_edittext">phone_edit_text</string>
+    <string name="com_lamudi_phonefield_flag_spinner">flag_spinner</string>
+    <string name="com_lamudi_phonefield_til_phone">til_phone</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="amount_in_inr">Amount in INR</string>
+    <string name="total_btc_to_pay">Total BTC to Pay</string>
+    <string name="password">Password</string>
+    <string name="password_changed_successfully">Password updated successfully.</string>
+    <string name="bank_information">Bank Information</string>
+    <string name="mysivana_balance">MySivana Account</string>
+    <string name="merchant_listing">Merchant Listing</string>
+    <string name="transaction_look_up">Transaction Look Up</string>
+    <string name="contact">CONTACT</string>
+    <string name="get_direction">GET DIRECTION</string>
+
+    <string name="format_address">%1$s, %2$s, %3$s, %4$s, %5$s</string>
+    <string name="change_setting">change setting</string>
+    <string name="all_fields_mandatory">Please fill in the details to complete.</string>
+    <string name="name_validation">Please provide your business name</string>
+    <string name="my_name_validation">Please provide your full name</string>
+    <string name="location_validation">Please provide your location</string>
+    <string name="email_validation_message">Please provide a valid email address.</string>
+    <string name="phone_validation_message">Please provide a valid phone number.</string>
+    <string name="validation_confirm_password">The password and confirm password doesn\'t match.</string>
+    <string name="validation_password_min_char">The password must be atleast 6 characters.</string>
+    <string name="validation_cnfrm_pwd">Please confirm your password</string>
+    <string name="invalid_otp">OTP or verification code entered is not valid.</string>
+    <string name="please_enter_otp">Please enter OTP, which is sent to the registered phone number.</string>
+    <string name="user_exists">User already registered with the given email address or phone number.</string>
+    <string name="user_not_exists">The email or phone number you entered is incorrect.</string>
+    <string name="validation_login_basic_invalid">Please enter valid email or phone number, password to login.</string>
+    <string name="validation_login_invalid">The email or phone number, password you entered is incorrect.</string>
+    <string name="validation_login_email">Please enter valid email or phone number to login.</string>
+    <string name="validation_reset_email">Please enter valid email or phone number.</string>
+    <string name="current_password_wrong">Your current password doesn\'t match with our records.</string>
+
+
+    <!--   Transaction details  -->
+    <string name="view_transactions">VIEW TRANSACTION RECEIPT</string>
+    <string name="transaction_receipt">Transaction Receipt</string>
+    <string name="receipt_for">Receipt for</string>
+    <string name="transaction_code">Transaction Code</string>
+    <string name="send_receipt">Send Receipt</string>
+    <string name="format_transaction_date">%1$s/%2$s/%3$s</string>
+    <string name="format_transaction_hour">%1$s:%2$s</string>
+    <string name="report_issue"> <u>Report an issue</u></string>
+    <string name="report_issue_statement">State your issue here.</string>
+    <string name="report_my_issue">Report Issue</string>
+    <!--<string name="no_transactions">No transactions done</string>-->
+    <string name="no_merchants">We are working hard to add merchants in your location, thanks for your interest and we will keep you updated.</string>
+    <string name="no_completed">No completed transactions, click here to start a transaction.</string>
+    <string name="no_pending">No pending transactions, click here to start a transaction.</string>
+
+    <!--   Location services  -->
+    <string name="location_service">Location Services</string>
+    <string name="gps_not_enabled">Location services are disabled, enable it to get directons. </string>
+    <string name="go_to_location_settings">Location Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="gps_not_enabled_error">Cannot show accurate location/ directions, since location services are disabled.</string>
+
+
+    <!-- General -->
+    <string name="server_failed">Something went wrong, please try after sometime or Click here to reach out us.</string>
+    <string name="dialog_window_warning">Please enter your password to complete the operation.</string>
+    <string name="warning_verify_email">Verify Email</string>
+    <string name="email_verification_msg">Please verify your email to initiate a payment. </string>
+
+
+    <!--   Bank Details -->
+    <string name="validation_blank">Please enter bank details to proceed.</string>
+    <string name="validation_bankcode">Please enter the proper IFSC code.</string>
+    <string name="validation_accountnumber">Please enter your account number.</string>
+    <string name="validation_bankname">Please enter your bank name.</string>
+    <string name="validation_acctype">Please enter the type of your account.</string>
+    <string name="validation_acctype_notvalid">The account type should be Savings / Current.</string>
+    <string name="validation_bankcode_proper">Please enter the proper IFSC code.</string>
+    <string name="add_bank_details">Add Bank Details</string>
+    <string name="view_bank_details">View Bank Details</string>
+    <string name="proceed">Proceed</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="acc_number">Account Number</string>
+    <string name="payee_name">Payee Name</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="account_type">Account Type</string>
+    <string name="upi_address">UPI Address</string>
+    <string name="bank_details_success">Successfully added or updated your bank details!</string>
+    <string name="account_type_savings">Savings</string>
+    <string name="account_type_current">Current</string>
+
+    <string name="payment_validation">Amount, Full Name, Phone &amp; Email of the Receiver cannot be blank.</string>
+    <string name="rupee_validation">Please provide with amount</string>
+    <!--<string name="payment_validation">All fields marked with an asterisk (<font fgcolor="red">*</font>) are required.</string>-->
+    <string name="or_string">OR</string>
+    <string name="awaiting_payment">Awaiting Payment</string>
+
+    <string name="write_here">Write here...</string>
+    <string name="change">Change</string>
+    <string name="verified">Verified</string>
+    <string name="payment_completed">Payment completed</string>
+    <string name="pay_cash">PAY CASH</string>
+    <string name="hint_status">Status</string>
+    <string name="transaction_status">"Status: "</string>
+    <string name="paid_cash">PAID CASH</string>
+    <string name="transaction_error">Warning!</string>
+    <string name="transaction_code_generation_error">Your transaction has expired as we did\'nt receive the complete amount, if you think this message is incorrect please report an issue from help to get refund or complete the transaction. </string>
+    <string name="show_receipt">Show Receipt</string>
+    <string name="visit_nearby_merchant">Visit a nearby merchant to get your cash.</string>
+    <string name="initiated_bank_deposit">We will initiate deposit to your bank account. In case you don\'t receive it within 24 hours, please %1$s to report an issue to our customer care.</string>
+    <string name="click_here">click here</string>
+    <string name="amount_credited">We have initiated deposit to your bank account. In case you don\'t receive it within 4 hours, please %1$s to report an issue to our customer care.</string>
+    <string name="view">View</string>
+    <string name="cant_pay">You must add your bank details to initiate a payment.</string>
+    <string name="enter_transaction_code_here">Enter Transaction Code</string>
+    <string name="write_feedback">Please write your feedback and send.</string>
+    <string name="account_relogin">To ensure the security, please re-login in your account to continue.</string>
+    <string name="format_phone_IN">+91%1$s</string>
+
+
+    <!-- Profile Picture-->
+    <string name="add_pic_from">Add Picture From</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <!-- No Network-->
+    <string name="something_wrong_try_again">Something went wrong! Try again after sometime</string>
+    <string name="something_wrong">Something went wrong!</string>
+    <string name="try_again">Please try again after sometime</string>
+    <string name="internet_check">Check your internet connection and try again</string>
+    <string name="log_out">You\'re forced to log out, please log In to continue </string>
+    <string name="retry">OK</string>
+
+    <!--My Sivana Welcome note for sender/receiver-->
+    <string name="welcome_note">Welcome to MySivana !</string>
+    <string name="welcome_note_1">Thank you for creating your account with MySivana. Our goal is to make it convenient for you to convert your bitcoins to fiat deposits to your bank account or to pick up cash at local merchants. You can also purchase goods and services within our merchant network and pay with bitcoin.</string>
+    <string name="welcome_note_2">Please click on the link that has just been sent to your email account to verify and complete your registration process.</string>
+    <string name="welcome_note_3">For questions or feedback please write to us %1$s or go to help section from app menu.</string>
+
+    <!--My Sivana Welcome note for merchant/service provider-->
+    <string name="welcome_note_merchant_1">Thank you for expressing your interest in becoming a MySivana partner. Our goal is to make it convenient for our customers to use  bitcoin and convert it to cash or use them to purchase goods and services from local merchants like you.</string>
+    <string name="welcome_note_merchant_2">One of our customer service representatives will contact you to complete the your paperwork.</string>
+    <string name="welcome_note_merchant_3">For questions or feedback please write to us %1$s</string>
+
+<string name="mail_feedback">feedback@mysivana.com</string>
+    <string name="simple_steps">3 Simple steps to use MySivana</string>
+    <string name="internal_server_error">Internal Server Error, try after sometime.</string>
+
+
+    <string name="click_here_to_verify">Not Verified</string>
+    <string name="verify_message">Your email must be verified to initiate any transactions.</string>
+
+    <string-array name="welcome_titles">
+        <item>Sign Up/Sign In</item>
+        <item>Pay BTC through App</item>
+        <item> Get cash from nearby store</item>
+    </string-array>
+    <string-array name="welcome_desc">
+        <item>To enjoy quick and easy exchange of BTC to your local currency platform.</item>
+        <item>With just a click you can exchange your BTC to your local currency.</item>
+        <item>Find nearby MySivana servicing store to collect your local currency.</item>
+    </string-array>
+
+    <!-- Balance screen-->
+    <string name="available_bal">Available balance</string>
+    <string name="request_stmt">Request a statement</string>
+    <string name="no_transactions">No transactions on your account. If you think this message is incorrect, please %1$s to use Help section to call us.</string>
+    <string name="my_wallet">My Statement</string>
+    <string name="cannot_initiate">Transaction amount cannot be more than INR 49,999.</string>
+    <string name="confirm_your_details">Please check the details before you proceed, make sure that name matches with a government issued identification card for our merchants to verify.</string>
+    <string name="confirm_your_details_1">Please check the details before you proceed, make sure that name matches with name of the account owner into whose account the direct deposit is to be made </string>
+    <string name="amount_b">Amount\u00A0\u00A0:\u00A0\u00A0</string>
+    <string name="name_b">Name\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0:\u00A0\u00A0</string>
+    <string name="phone_b">Phone\u00A0\u00A0\u00A0\u00A0\u00A0:\u00A0\u00A0</string>
+    <string name="email_b">Email\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0:\u00A0\u00A0</string>
+    <string name="bank_branch">Branch Name</string>
+    <string name="pick_a_deposit_option">RECEIVE MONEY TO</string>
+    <string name="bank">Bank Deposit</string>
+    <string name="cash_pickup">Cash Pickup</string>
+
+    <string name="notification_transaction_time">Make payment within %1$s min.</string>
+    <string name="notification_transaction_started">Your transaction has started</string>
+    <string name="aml_privacy_policy">AML Policy</string>
+    <string name="invite_friend">Invite a friend</string>
+    <string name="config_scheme">https</string>
+    <string name="config_host">mysivana.com</string>
+    <string name="config_path">invites</string>
+    <string name="how_the_contest_work">How the contest work</string>
+    <string name="referral_leader_board">Referral Leader Board</string>
+    <string name="refer_friends_to_win">Refer friends to win</string>
+    <string name="first_prize">1st Prize</string>
+    <string name="second_prize">2nd Prize</string>
+    <string name="third_prize">3rd Prize</string>
+    <string name="thirty_gold">30gm Gold</string>
+    <string name="twenty_gold">20gm Gold</string>
+    <string name="ten_gold">10gm Gold</string>
+    <string name="know_contest_rules">Hey, %1$s to know the rules of the contest.</string>
+    <string name="no_of_users">NUMBER OF USERS</string>
+    <string name="contest_rules">"The aim of this contest is to collect SIVA (MySivana) Tokens. You collect SIVA Tokens by transacting. What’s more, you can collect more every time your friends by inviting them to use the system.
+
+    This promotion ends when the count of users in the MySivana app reaches 10,000.
+
+    When you sign up, you receive two SIVA tokens. Another way to earn SIVA tokens is by referring friends and family to the MySivana application.  Every time a new user signs up with your referral code , you will receive 1 SIVA token. If the new user performs a transaction, you will get 1 additional SIVA token.
+
+    For all subsequent transactions, only the user who initiated the transaction will receive 1 SIVA tokens for every 1000 rupees in the transaction.
+
+    Fractions of 1000 rupees are ignored in assigning Tokens. For example, if the user sends 14,500 rupees then the user will receive 14 Tokens.
+
+    When the promotion ends, the top 3 users with the highest SIVA tokens will be the winners. The first prize winner will receive 30 grams of gold, second prize winner receives 20 grams of gold and third prize winner will receive 10 grams of gold.
+
+    In case of a tie in the SIVA tokens, the user who reached the SIVA tokens count first will be the winner for any of the top 3 positions.
+
+    In the future, these SIVA tokens will be listed on the popular exchanges as a ERC 20 token. As the MySivana network grows, the tokens will grow in value."
+</string>
+    <string name="referral_siva_points">Get a chance to win gold coins</string>
+    <string name="buy_bitcoins">Buy Bitcoins</string>
+
+
+   <!--BTC Strings-->
+    <string name="hint_value_in_btc">Value in BTC</string>
+    <string name="btc_value">BTC Value</string>
+    <string name="total_btc_paid">Total BTC paid</string>
+    <string name="service_charge_in_btc">Service Charge in BTC</string>
+    <string name="bitcoin_address">Bitcoin Address</string>
+    <string name="bitcoin_qr_code">Bitcoin QR Code</string>
+    <string name="btc_buy">You don\'t have Bitcoin? %1$s to buy.</string>
+
+
+    <!--ETH Strings-->
+    <string name="hint_value_in_eth">Value in ETH</string>
+    <string name="eth_value">ETH Value</string>
+    <string name="total_eth_paid">Total ETH paid</string>
+    <string name="service_charge_in_eth">Service Charge in ETH</string>
+    <string name="ethereum_address">Ethereum Address</string>
+    <string name="ethereum_qr_code">Ethereum QR Code</string>
+    <string name="eth_buy">You don\'t have Ethereum? %1$s to buy.</string>
+
+    <!--Request Money-->
+    <string name="notifications">Notifications</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="request_money">Request For Money</string>
+    <string name="request_cash">REQUEST CASH</string>
+    <string name="request_initiated">Request Initiated</string>
+    <string name="request_money_processed">Your request for money has been initiated. Share you request details with the potential money sender if he doesn\'t have MySivana app. Or reach out them using contact now</string>
+    <string name="contact_now">CONTACT NOW</string>
+    <string name="share_now">SHARE NOW</string>
+    <string name="cannot_raise_request">Please enter different number as you cannot request money from yourself.</string>
+    <string name="user_is_not_my_sivana_user">Entered phone number is not a MySivana user. Please invite to start transactions with them.</string>
+    <string name="user_not_exists_heading">Invite User</string>
+    <string name="channel_name">RequestMoneyChannel</string>
+    <string name="channel_description">Requests of Money are piled up here</string>
+    <string name="no_notifications">You have no notifications at this moment.</string>
+    <string name="want_to_be_merchant">Be a Merchant</string>
+    <string name="merchant_description">Click proceed if you want to sign up as a merchant</string>
+    <string name="click_here_attach">Click here to attach a file</string>
+    <string name="document">Document</string>
+    <string name="hint_notes">Notes (Max 240 characters)</string>
+    <string name="attachment">Requested Attachment</string>
+    <string name="notes">Notes</string>
+    <string name="mysivana_tokens">My SIVA Tokens</string>
+</resources>

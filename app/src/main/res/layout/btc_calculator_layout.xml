@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.mysivana.custom.MSTextView
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:text="@string/amount_in_inr"
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Roman" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:padding="@dimen/dimen_2"
+            android:src="@drawable/ic_rupee_black" />
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/tv_amount_inr"
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Roman" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.mysivana.custom.MSTextView
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:text="?attr/coinValue"
+            android:id="@+id/coinValueTitle"
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Roman" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/coinValueImage"
+            android:padding="@dimen/dimen_2"
+            android:src="?attr/coinBackground1" />
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/tv_btc_resp"
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Roman" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.mysivana.custom.MSTextView
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_weight="0.6"
+            android:id="@+id/coinChargeTitle"
+            android:gravity="left"
+            android:text="?attr/coinServiceCharge"
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Roman" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:padding="@dimen/dimen_2"
+            android:id="@+id/coinChargeImage"
+            android:src="?attr/coinBackground1" />
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/tv_service_charge"
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Roman" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.mysivana.custom.MSTextView
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:id="@+id/coinTotalTitle"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:text="?attr/coinTotal"
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:padding="@dimen/dimen_2"
+            android:id="@+id/coinTotalImage"
+            android:src="?attr/coinBackground1" />
+
+        <com.mysivana.custom.MSTextView
+            android:id="@+id/tv_total_pay"
+            style="@style/MainTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/textsize_12"
+            app:fontName="Bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@color/colorPrimary" />
+</LinearLayout>
